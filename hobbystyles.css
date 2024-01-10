@@ -382,9 +382,8 @@
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 5rem !important;
 }
 
 .services__container {
@@ -434,18 +433,21 @@
       rgba(17, 17, 17, 0.9) 100%
     ),
     url("/images/lightcannotsee2.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .services__card4 {
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0) 0%,
-      rgba(17, 17, 17, 0.7) 100%
+      rgba(17, 17, 17, 0.9) 100%
     ),
-    url("/images/theboys2.webp");
+    url("/images/theboys3.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .services__card5 {
@@ -455,9 +457,9 @@
       rgba(17, 17, 17, 0.9) 100%
     ),
     url("/images/GOT2.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .services__card6 {
@@ -467,9 +469,9 @@
       rgba(17, 17, 17, 0.9) 100%
     ),
     url("/images/originals.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .services__card:before {
@@ -477,7 +479,7 @@
 }
 
 .services__card h2 {
-  color: #BA9367;
+  color: #ba9367;
   font-weight: bold;
   position: absolute;
   top: 350px; /* Adjust as needed */
@@ -486,11 +488,11 @@
   text-align: center;
   width: 100%;
   -webkit-text-stroke: 1px #141414; /* WebKit browsers (Safari, Chrome) */
-  text-stroke: 1px #BA9367; /* Standard syntax */
+  text-stroke: 1px #ba9367; /* Standard syntax */
 }
 
 .services__card p {
-  color: #FFF9DE;
+  color: #fff9de;
   position: absolute;
   top: 380px;
   left: 5px;
