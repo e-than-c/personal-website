@@ -235,7 +235,7 @@
 }
 
 .main__content h2 {
-  font-size: 5rem;
+  font-size: 4rem;
   margin-top: 10px;
   background-color: #ff8177;
   background-image: linear-gradient(-20deg, #fff 0%, #c95446 100%);
@@ -390,142 +390,111 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .services__card {
   margin: 1rem;
-  height: 525px;
-  width: 400px;
+  display: flex;
+  align-items: center;
+  height: auto;
   border-radius: 4px;
-  background-size: cover;
-  position: relative;
+  overflow: hidden;
   color: #fff;
+  margin-bottom: 60px;
 }
 
-.services__card1 {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(17, 17, 17, 0.9) 100%
-    ),
-    url("/images/shadowhunter1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.linkedin-profile {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
 }
 
-.services__card2 {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(17, 17, 17, 0.9) 100%
-    ),
-    url("/images/dune2.jpg.crdownload");
-  background-position: center;
-  background-repeat: no-repeat;
+.profile-picture1 {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; 
+  background-image: url("/images/rebecca.jpg");
+  background-position: 50% 15%;
   background-size: cover;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
 
-.services__card3 {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(17, 17, 17, 0.9) 100%
-    ),
-    url("/images/lightcannotsee2.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.profile-picture2 {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; 
+  background-image: url("/images/val.jpg");
+  background-position: 45% 35%;
+  background-size: 340%;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
 
-.services__card4 {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(17, 17, 17, 0.9) 100%
-    ),
-    url("/images/theboys3.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.profile-picture3 {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; 
+  background-image: url("/images/theo.jpg");
+  background-position: 5% 30%;
+  background-size: 260%;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
 
-.services__card5 {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(17, 17, 17, 0.9) 100%
-    ),
-    url("/images/GOT2.jpg");
+.profile-picture4 {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; 
+  background-image: url("/images/lightcannotsee1.png");
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
 
-.services__card6 {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(17, 17, 17, 0.9) 100%
-    ),
-    url("/images/originals.jpg");
+.profile-picture5 {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; 
+  background-image: url("/images/ladymidnight1.jpg");
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-left: 10px;
+  width: auto;
+}
+
+.services__card h2 {
+  margin: 0;
+  color: #ba9367;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.services__card p {
+  color: #fff9de;
+  top: 0px;
+  border: 2px;
+  padding: 5px;
+  max-width: 320px;
+  margin-top: 5px;
 }
 
 .services__card:before {
   opacity: 0.2;
 }
 
-.services__card h2 {
-  font-size: 1.7rem;
-  color: #ba9367;
-  font-weight: bold;
-  position: absolute;
-  top: 350px; /* Adjust as needed */
-  left: 0;
-  transform: translate(0, -50%); /* Center vertically */
-  text-align: center;
-  width: 100%;
-  -webkit-text-stroke: 1px #141414; /* WebKit browsers (Safari, Chrome) */
-  text-stroke: 1px #ba9367; /* Standard syntax */
-}
-
-.services__card p {
-  color: #fff9de;
-  position: absolute;
-  top: 370px;
-  left: 5px;
-  text-align: center;
-  border: 2px;
-  padding: 5px;
-  box-sizing: border-box; /* Include padding in the total width/height */
-  width: calc(
-    100% - 20px
-  ); /* Calculate the width considering the border and padding */
-}
-
-.services__card button {
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  outline: none;
-  border-radius: 4px;
-  background: #ba9367;
-  position: absolute;
-  top: 440px;
-  left: 30px;
-  font-size: 1rem;
-}
-
-.services__card button:hover {
-  cursor: pointer;
-}
-
 .services__card:hover {
-  transform: scale(1.095);
-  transition: 0.2s ease-in;
   cursor: pointer;
 }
 
