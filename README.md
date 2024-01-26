@@ -43,6 +43,7 @@ Welcome to my personal website! This project primarily utilizes HTML, CSS, and J
 
 ## Friends Page
 ![Friends Page](./images/friends1.png)
+
 Example of a profile on the friends page.
 
 ## Contact Information
